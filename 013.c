@@ -79,10 +79,10 @@ Sample Output:
 
 //回饋次數遞迴
 int C(int m, int count) {
-    count++;
-    if (m==0 || m==1) return count;
-    if (m%2==0) return C(m/2, count);
-    if (m%2==1) return C((m+1)/2, count);
+    	if (m==0 || m==1) return count;
+	count++;
+   	if (m%2==0) return C(m/2, count);
+   	if (m%2==1) return C((m+1)/2, count);
 }
 
 //10轉2
@@ -117,7 +117,7 @@ int main(void) {
     while(control != -1){
         scanf("%d\n%d", &num, &control);	//輸入
 		
-        con = C(bin_to_dec(num), 0)-1;	//進入遞迴
+        con = C(bin_to_dec(num), 0);	//進入遞迴
 		
 		//補0
         if (con<2){printf("000%d\n", dec_to_bin(con));}
