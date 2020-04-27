@@ -96,9 +96,9 @@ int main() {
     scanf("%c%*c", &c);
     dealer_point += conv(c);
 	
-	//如果條件，繼續發牌
+	//如果條件符合，繼續發牌
     while (player_flag || dealer_flag){
-		//玩家
+	//玩家
         if (player_flag) {
             scanf("%c%*c", &hit);	//是否繼續拿牌
             if (hit == 'Y') {
@@ -111,7 +111,7 @@ int main() {
             } else if (hit =='N') player_flag = 0;	//不再拿牌
         }
 		
-		//電腦
+	//電腦
         if (dealer_flag) {
             if (dealer_point < player_point || dealer_point <= 8) {
                 scanf("%c%*c", &c);	//拿牌
