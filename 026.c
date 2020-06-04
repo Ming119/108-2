@@ -103,7 +103,7 @@ int main(void) {
         }
     }
 
-    printf("%d\n", maxLen);
+    printf("%d\n", maxLen);	//輸出
   
     return 0;
 }
