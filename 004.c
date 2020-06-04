@@ -60,8 +60,7 @@ int main() {
     float plan2[6] = {383, 0.07, 0.1304, 0.1217, 1.1127, 1.2458};	//383型
     float plan3[6] = {983, 0.06, 0.1087, 0.1018, 0.9572, 1.1243};	//983型
 
-	//輸入
-    scanf("%d%d%d%d%d", &in_voice, &out_voice, &local, &in_sms, &out_sms);
+    scanf("%d%d%d%d%d", &in_voice, &out_voice, &local, &in_sms, &out_sms);	//輸入
 	
 	//計算資費
 	float calcPrice(float plan[]) {
