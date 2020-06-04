@@ -43,15 +43,6 @@ Output
 0
 */
 
-/*
-	解法說明
-
-	1.	使用迴圈分別輸入5位球員的打擊情況
-	2.	根據輸入打擊情況跑壘
-	3.	輸出最後一、二、三壘的狀況
-	
-*/
-
 //	方法1，使用位移儲存壘包資訊
 #include <stdio.h>
 
@@ -83,8 +74,7 @@ int main() {
 		}
 	}
    
-	//輸出
-	printf("%d\n%d\n%d", base & 1, (base>>1) & 1, (base>>2) & 1);
+	printf("%d\n%d\n%d", base & 1, (base>>1) & 1, (base>>2) & 1);	//輸出
 	
 	return 0;
 }
@@ -128,8 +118,7 @@ int main() {
 		}
 	}
    
-	//輸出
-	printf("%d\n%d\n%d", base[1], base[2], base[3]);
+	printf("%d\n%d\n%d", base[1], base[2], base[3]);	//輸出
 	
 	return 0;
 }
