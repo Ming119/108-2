@@ -9,7 +9,6 @@
 輸入：100以內任意自然數
 輸出：質數每三個輸出一個
 
-
 Sample Input：
 5
 
@@ -51,11 +50,9 @@ int isPrime(int n) {
 }
 	
 int main() {
-	//初始化
-    int num, counter = 0;
+    int num, counter = 0;	//初始化
 	
-	//輸入
-    scanf("%d", &num);
+    scanf("%d", &num);	//輸入
 	
     if (num > 1 && num < 101){	//100以內
         for(int i=2; i<=num; i++) {
