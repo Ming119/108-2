@@ -51,16 +51,14 @@ int main() {
     int m1, m2, x, y;	
     m1 = m2 = x = y = 0;
 	
-	//輸入
-    scanf("%d%d%d%d", &m1, &m2, &x, &y);
+    scanf("%d%d%d%d", &m1, &m2, &x, &y);	//輸入
 	
-    float total = (m1 + m2) * x;	//全部薪資
-    float tax = total * 0.08;			//稅金
-    float fee = y * 0.05;				//勞保費
+    float total = (m1 + m2) * x;			//全部薪資
+    float tax = total * 0.08;				//稅金
+    float fee = y * 0.05;					//勞保費
     float act_income = total - tax - fee;	//實際所得
 	
-	//輸出
-    printf("%.1f\n%.1f\n%.1f", act_income, fee, tax);
+    printf("%.1f\n%.1f\n%.1f", act_income, fee, tax);	//輸出
 
     return 0;
 }
